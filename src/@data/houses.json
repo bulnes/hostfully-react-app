@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Confort house in the center of the neighborhood",
+    "description": "This house is located in the center of the neighborhood, close to the main square and the church. It has a big garden and a swimming pool.",
+    "pricePerNight": 100,
+    "maxGuests": 6,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=478&h=319&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "Beautiful house with a view to the mountains",
+    "description": "This house is located in the mountains, close to the river. It has a big garden and a swimming pool.",
+    "pricePerNight": 150,
+    "maxGuests": 8,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=478&h=319&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Cozy house in the forest",
+    "description": "This house is located in the forest, close to the lake. It has a big garden and a swimming pool.",
+    "pricePerNight": 200,
+    "maxGuests": 10,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=478&h=319&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "Modern house in the city",
+    "description": "This house is located in the city, close to the main square and the church. It has a big garden and a swimming pool.",
+    "pricePerNight": 250,
+    "maxGuests": 12,
+    "bedrooms": 6,
+    "bathrooms": 5,
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=478&h=319&fit=crop"
+  },
+  {
+    "id": 5,
+    "title": "Rustic house in the countryside",
+    "description": "This house is located in the countryside, close to the river. It has a big garden and a swimming pool.",
+    "pricePerNight": 300,
+    "maxGuests": 14,
+    "bedrooms": 7,
+    "bathrooms": 6,
+    "image": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=478&h=319&fit=crop"
+  },
+  {
+    "id": 6,
+    "title": "Luxury house in the beach",
+    "description": "This house is located in the beach, close to the sea. It has a big garden and a swimming pool.",
+    "pricePerNight": 350,
+    "maxGuests": 16,
+    "bedrooms": 8,
+    "bathrooms": 7,
+    "image": "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=478&h=319&fit=crop"
+  },
+  {
+    "id": 7,
+    "title": "Confort house in the center of the neighborhood",
+    "description": "This house is located in the center of the neighborhood, close to the main square and the church. It has a big garden and a swimming pool.",
+    "pricePerNight": 100,
+    "maxGuests": 6,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "image": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?q=80&w=478&h=319&fit=crop"
+  },
+  {
+    "id": 8,
+    "title": "Beautiful house with a view to the mountains",
+    "description": "This house is located in the mountains, close to the river. It has a big garden and a swimming pool.",
+    "pricePerNight": 150,
+    "maxGuests": 8,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=478&h=319&fit=crop"
+  },
+  {
+    "id": 9,
+    "title": "Cozy house in the forest",
+    "description": "This house is located in the forest, close to the lake. It has a big garden and a swimming pool.",
+    "pricePerNight": 200,
+    "maxGuests": 10,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "image": "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=478&h=319&fit=crop"
+  }
+]
