@@ -1,8 +1,10 @@
-import { HouseProps } from "./HouseProps";
+import { BookingProps } from "./BookingProps";
 
 export interface BookingsContextType {
   showBookings: boolean;
   setShowBookingsVisibility: (showBookings: boolean) => void;
-  bookings: HouseProps[];
-  addBooking: (booking: HouseProps) => void;
+  bookings: BookingProps[];
+  addBooking: (booking: BookingProps) => void;
+  removeBooking: (bookingId: number) => void;
+  updateBooking: (bookingId: number, updatedBooking: BookingProps) => void;
 }
