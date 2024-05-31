@@ -31,7 +31,7 @@ export function Card({
         <p className="text-gray-600 text-sm break-all mb-4">{description}</p>
 
         <div>
-          <div className="flex items-center justify-between flex-col lg:flex-row">
+          <div className="flex items-start lg:items-center justify-between flex-col lg:flex-row">
             <p className="text-gray-900 font-semibold">
               ${pricePerNight} <span className="text-gray-600">/ night</span>
             </p>
