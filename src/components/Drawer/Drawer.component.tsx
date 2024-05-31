@@ -16,8 +16,8 @@ export function Drawer() {
 
   function handleUpdateBooking(
     bookingId: number,
-    checkInDate: string | null,
-    checkOutDate: string | null
+    checkInDate: string,
+    checkOutDate: string
   ) {
     if (!checkInDate || !checkOutDate) {
       return;
@@ -128,8 +128,8 @@ export function Drawer() {
                       onClick={() =>
                         handleUpdateBooking(
                           booking.id,
-                          checkinRef.current?.value,
-                          checkoutRef.current?.value
+                          checkinRef.current?.value || "",
+                          checkoutRef.current?.value || ""
                         )
                       }
                     >
