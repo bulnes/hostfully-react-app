@@ -1,13 +1,14 @@
 import { useContext, useState } from "react";
 import { BookingsContext } from "../../@contexts/BookingsContext";
 import housesData from "../../@data/houses.json";
-import { CardProps } from "../../@types/CardProps";
+import { HouseProps } from "../../@types/HouseProps";
 import { Card } from "../Card/Card.component";
 
 export function CardsContainer() {
   const { showBookings, setShowBookingsVisibility } =
     useContext(BookingsContext);
-  const [houses, setHouses] = useState<CardProps[]>([...housesData]);
+
+  const [houses, setHouses] = useState<HouseProps[]>([...housesData]);
 
   function handleSortHouses(sortBy: string) {
     const sortedHouses = [...houses].sort((a, b) => {

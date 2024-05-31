@@ -1,4 +1,6 @@
-import { CardProps } from "../../@types/CardProps";
+import { HouseProps } from "../../@types/HouseProps";
+
+interface CardProps extends HouseProps {}
 
 export function Card({
   id,

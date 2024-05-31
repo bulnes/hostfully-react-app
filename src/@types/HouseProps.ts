@@ -1,4 +1,4 @@
-export interface CardProps {
+export interface HouseProps {
   id: number;
   title: string;
   description: string;
