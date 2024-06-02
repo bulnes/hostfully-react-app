@@ -1,0 +1,1197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: CardsContainer should be represented by the snapshot 1`] = `
+<div>
+  <div
+    class="p-3 md:p-4 xl:p-5"
+  >
+    <div
+      class="mb-10 flex items-end justify-between"
+    >
+      <div>
+        <label
+          class="text-2xl font-semibold block"
+          for="sort-houses"
+        >
+          Sort by
+        </label>
+        <select
+          class="p-2 mt-2 border border-gray-300 rounded-md"
+          id="sort-houses"
+          name="sort-houses"
+        >
+          <option
+            value="newest"
+          >
+            Newest
+          </option>
+          <option
+            value="lowest-price"
+          >
+            Lowest price
+          </option>
+          <option
+            value="highest-price"
+          >
+            Highest price
+          </option>
+        </select>
+      </div>
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+      >
+        Show bookings (
+        1
+        )
+      </button>
+    </div>
+    <div
+      class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3"
+    >
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Confort house in the center of the neighborhood
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the center of the neighborhood, close to the main square and the church. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                100
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  6
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  3
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  2
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Beautiful house with a view to the mountains
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the mountains, close to the river. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                150
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  8
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  4
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  3
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Cozy house in the forest
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the forest, close to the lake. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                200
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  10
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  5
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  4
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Modern house in the city
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the city, close to the main square and the church. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                250
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  12
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  6
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  5
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Rustic house in the countryside
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the countryside, close to the river. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                300
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  14
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  7
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  6
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Luxury house in the beach
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the beach, close to the sea. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                350
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  16
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  8
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  7
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1576941089067-2de3c901e126?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Confort house in the center of the neighborhood
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the center of the neighborhood, close to the main square and the church. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                100
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  6
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  3
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  2
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Beautiful house with a view to the mountains
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the mountains, close to the river. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                150
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  8
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  4
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  3
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white border rounded-lg shadow-md"
+      >
+        <div
+          class="flex justify-center pb-5"
+        >
+          <img
+            alt=""
+            class="rounded-t-lg"
+            height="319"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=478&h=319&fit=crop"
+            width="478"
+          />
+        </div>
+        <div
+          class="px-4 pb-3"
+        >
+          <h5
+            class="text-xl font-semibold tracking-tight hover:text-violet-800 text-gray-900 mb-3"
+          >
+            Cozy house in the forest
+          </h5>
+          <p
+            class="text-gray-600 text-sm break-all mb-4"
+          >
+            This house is located in the forest, close to the lake. It has a big garden and a swimming pool.
+          </p>
+          <div>
+            <div
+              class="flex items-start lg:items-center justify-between flex-col lg:flex-row"
+            >
+              <p
+                class="text-gray-900 font-semibold"
+              >
+                $
+                200
+                 
+                <span
+                  class="text-gray-600"
+                >
+                  / night
+                </span>
+              </p>
+              <p
+                class="flex items-center gap-3"
+              >
+                <span
+                  class="text-gray-600"
+                >
+                  10
+                   guests
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  5
+                   bedrooms
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                   • 
+                </span>
+                <span
+                  class="text-gray-600"
+                >
+                  4
+                   baths
+                </span>
+              </p>
+            </div>
+            <hr
+              class="my-4"
+            />
+            <form>
+              <div
+                class="flex items-center gap-3 mt-3 mb-5"
+              >
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkin"
+                  >
+                    Check-in
+                  </label>
+                  <input
+                    class="border rounded-md p-1"
+                    id="checkin"
+                    type="date"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex items-start flex-col gap-1"
+                >
+                  <label
+                    class="text-gray-600"
+                    for="checkout"
+                  >
+                    Check-out
+                  </label>
+                  <input
+                    class="border rounded-md p-1 w-full"
+                    id="checkout"
+                    type="date"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Book now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -21,4 +21,9 @@ describe("Component: BookingForm", () => {
     const wrapper = render(<BookingForm {...props} />);
     expect(wrapper).toBeDefined();
   });
+
+  it("should be represented by the snapshot", () => {
+    const { container } = render(<BookingForm {...props} />);
+    expect(container).toMatchSnapshot();
+  });
 });

@@ -15,4 +15,9 @@ describe("Component: Container", () => {
     const wrapper = render(<Container>Container</Container>);
     expect(wrapper.getByText("Container")).toBeDefined();
   });
+
+  it("should be represented by the snapshot", () => {
+    const { container } = render(<Container>Container</Container>);
+    expect(container).toMatchSnapshot();
+  });
 });

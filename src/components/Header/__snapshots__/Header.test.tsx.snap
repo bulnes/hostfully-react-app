@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Header should be represented by the snapshot 1`] = `
+<div>
+  <header
+    class="text-center p-10"
+  >
+    <h1
+      class="font-bold text-4xl mb-4"
+    >
+      Hostfully
+    </h1>
+    <p
+      class="text-3xl"
+    >
+      Front-end Test
+    </p>
+  </header>
+</div>
+`;

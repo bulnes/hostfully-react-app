@@ -47,4 +47,9 @@ describe("Component: Card", () => {
     const wrapper = render(<Card {...props} />);
     expect(wrapper.getByText("2 baths")).toBeDefined();
   });
+
+  it("should be represented by the snapshot", () => {
+    const { container } = render(<Card {...props} />);
+    expect(container).toMatchSnapshot();
+  });
 });

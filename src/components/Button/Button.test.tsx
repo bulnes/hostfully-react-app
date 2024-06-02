@@ -30,4 +30,9 @@ describe("Component: Button", () => {
     const wrapper = render(<Button buttonType="danger">Click me!</Button>);
     expect(wrapper.getByText("Click me!")).toMatchSnapshot();
   });
+
+  it("should be represented by the snapshot", () => {
+    const { container } = render(<Button>Click me!</Button>);
+    expect(container).toMatchSnapshot();
+  });
 });

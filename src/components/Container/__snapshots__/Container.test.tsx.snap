@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Container should be represented by the snapshot 1`] = `
+<div>
+  <div
+    class="container mx-auto"
+  >
+    Container
+  </div>
+</div>
+`;

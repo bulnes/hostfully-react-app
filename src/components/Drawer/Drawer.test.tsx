@@ -49,4 +49,9 @@ describe("Component: Drawer", () => {
     wrapper.getByText("Close menu").click();
     expect(setShowBookingsVisibility).toHaveBeenCalled();
   });
+
+  it("should be represented by the snapshot", () => {
+    const { container } = render(<Drawer />);
+    expect(container).toMatchSnapshot();
+  });
 });

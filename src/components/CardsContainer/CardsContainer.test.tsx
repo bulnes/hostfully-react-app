@@ -53,4 +53,9 @@ describe("Component: CardsContainer", () => {
     const wrapper = render(<CardsContainer />);
     expect(wrapper.getByText("Highest price")).toBeDefined();
   });
+
+  it("should be represented by the snapshot", () => {
+    const { container } = render(<CardsContainer />);
+    expect(container).toMatchSnapshot();
+  });
 });

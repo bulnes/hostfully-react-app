@@ -20,4 +20,9 @@ describe("Component: Header", () => {
     const wrapper = render(<Header />);
     expect(wrapper.getByText("Front-end Test")).toBeDefined();
   });
+
+  it("should be represented by the snapshot", () => {
+    const { container } = render(<Header />);
+    expect(container).toMatchSnapshot();
+  });
 });
