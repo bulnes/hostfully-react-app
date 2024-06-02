@@ -2,13 +2,10 @@ import { useContext, useRef } from "react";
 import { toast } from "react-toastify";
 import swal from "sweetalert";
 import { BookingsContext } from "../../@contexts/BookingsContext";
+import { BookingFormProps } from "../../@types/BookingFormProps";
 import { BookingProps } from "../../@types/BookingProps";
 import { Button } from "../Button/Button.component";
 import { isValidInfo } from "./helpers/is-valid-info";
-
-interface BookingForm extends BookingProps {
-  formType?: "booking" | "update";
-}
 
 export function BookingForm({
   id,
@@ -23,7 +20,7 @@ export function BookingForm({
   checkOutDate,
   bookingId,
   formType = "booking",
-}: BookingForm) {
+}: BookingFormProps) {
   const { addBooking, removeBooking, updateBooking, bookings } =
     useContext(BookingsContext);
 
