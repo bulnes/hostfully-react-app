@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Button should render danger button correctly 1`] = `
+<button
+  class="bg-white text-red-700 border border-red-500 font-bold py-2 px-4 rounded"
+>
+  Click me!
+</button>
+`;
+
+exports[`Component: Button should render primary button correctly 1`] = `
+<button
+  class="bg-blue-500 hover:bg-blue-700 text-white border border-blue-500 font-bold py-2 px-4 rounded"
+>
+  Click me!
+</button>
+`;
+
+exports[`Component: Button should render secondary button correctly 1`] = `
+<button
+  class="bg-white text-blue-700 border border-blue-500 font-bold py-2 px-4 rounded"
+>
+  Click me!
+</button>
+`;

@@ -21,6 +21,7 @@ export function BookingForm({
   image,
   checkInDate,
   checkOutDate,
+  bookingId,
   formType = "booking",
 }: BookingForm) {
   const { addBooking, removeBooking, updateBooking, bookings } =
@@ -32,6 +33,7 @@ export function BookingForm({
   function handleBookNow(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
+    const bookingId = bookings.length + 1;
     const checkin = checkinRef.current?.value || "";
     const checkout = checkoutRef.current?.value || "";
 
@@ -47,6 +49,7 @@ export function BookingForm({
         bedrooms,
         bathrooms,
         image,
+        bookingId,
         checkInDate: checkin,
         checkOutDate: checkout,
       });
@@ -74,8 +77,8 @@ export function BookingForm({
     if (isValid) {
       const updatedBooking = {
         ...bookings.find((booking) => booking.id === bookingId),
-        checkInDate,
-        checkOutDate,
+        checkInDate: newCheckInDate,
+        checkOutDate: newCheckOutDate,
       } as BookingProps;
 
       updateBooking(bookingId, updatedBooking);
@@ -84,11 +87,7 @@ export function BookingForm({
     }
   }
 
-  function handleRemoveBooking(
-    bookingId: number,
-    checkInDate: string,
-    checkOutDate: string
-  ) {
+  function handleRemoveBooking(bookingId: number) {
     swal({
       title: "Are you sure?",
       text: "Once deleted, you will not be able to recover this booking!",
@@ -97,7 +96,7 @@ export function BookingForm({
       dangerMode: true,
     }).then((willDelete) => {
       if (willDelete) {
-        removeBooking(bookingId, checkInDate, checkOutDate);
+        removeBooking(bookingId);
 
         toast("Poof! Your booking has been deleted!");
       }
@@ -145,7 +144,7 @@ export function BookingForm({
             buttonType="secondary"
             onClick={() =>
               handleUpdateBooking(
-                id,
+                bookingId!,
                 checkInDate || "",
                 checkOutDate || "",
                 checkinRef.current?.value || "",
@@ -159,13 +158,7 @@ export function BookingForm({
           <Button
             type="button"
             buttonType="danger"
-            onClick={() =>
-              handleRemoveBooking(
-                id,
-                checkinRef.current?.value || "",
-                checkoutRef.current?.value || ""
-              )
-            }
+            onClick={() => handleRemoveBooking(bookingId!)}
           >
             Delete
           </Button>

@@ -21,23 +21,20 @@ export function App() {
   }
 
   function updateBooking(bookingId: number, updatedBooking: BookingProps) {
+    console.log("updateBooking", bookingId, updatedBooking);
+
     setBookings((bookingsState) =>
       bookingsState.map((booking) =>
-        booking.id === bookingId ? updatedBooking : booking
+        booking.bookingId === bookingId ? updatedBooking : booking
       )
     );
   }
 
-  function removeBooking(
-    bookingId: number,
-    checkInDate: string,
-    checkOutDate: string
-  ) {
+  function removeBooking(bookingId: number) {
+    console.log("removeBooking", bookingId);
+
     const bookingListId = bookings.findIndex(
-      (booking) =>
-        booking.id === bookingId &&
-        booking.checkInDate === checkInDate &&
-        booking.checkOutDate === checkOutDate
+      (booking) => booking.bookingId === bookingId
     );
 
     if (bookingListId >= 0) {
