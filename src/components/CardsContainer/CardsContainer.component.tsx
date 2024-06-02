@@ -2,10 +2,11 @@ import { useContext, useState } from "react";
 import { BookingsContext } from "../../@contexts/BookingsContext";
 import housesData from "../../@data/houses.json";
 import { HouseProps } from "../../@types/HouseProps";
+import { Button } from "../Button/Button.component";
 import { Card } from "../Card/Card.component";
 
 export function CardsContainer() {
-  const { showBookings, setShowBookingsVisibility } =
+  const { showBookings, setShowBookingsVisibility, bookings } =
     useContext(BookingsContext);
 
   const [houses, setHouses] = useState<HouseProps[]>([...housesData]);
@@ -49,13 +50,12 @@ export function CardsContainer() {
           </select>
         </div>
 
-        <button
-          type="button"
-          className="mt-5 py-2 px-4 bg-blue-700 text-white rounded-md"
+        <Button
+          buttonType={bookings.length === 0 ? "secondary" : "primary"}
           onClick={() => setShowBookingsVisibility(!showBookings)}
         >
-          Show bookings
-        </button>
+          Show bookings ({bookings.length})
+        </Button>
       </div>
 
       <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">

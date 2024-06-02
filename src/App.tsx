@@ -1,5 +1,6 @@
 import { useState } from "react";
-import swal from "sweetalert";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BookingsContext } from "./@contexts/BookingsContext";
 import { BookingProps } from "./@types/BookingProps";
 import { CardsContainer } from "./components/CardsContainer/CardsContainer.component";
@@ -16,39 +17,33 @@ export function App() {
   }
 
   function addBooking(booking: BookingProps) {
-    // Check if there are any bookings that overlap with the new booking
-    const bookingDate = new Date(booking.checkInDate);
-    const bookingCheckOutDate = new Date(booking.checkOutDate);
-    const overlappingBooking = bookings.find(
-      (b) =>
-        new Date(b.checkInDate) < bookingCheckOutDate &&
-        new Date(b.checkOutDate) > bookingDate
-    );
-
-    if (overlappingBooking) {
-      swal("Overlapping booking", "Please select another date range", "error");
-      return;
-    }
-
-    setBookings([...bookings, booking]);
-
-    swal("Booking added", "Your booking has been added", "success", {
-      timer: 1500,
-    });
-  }
-
-  function removeBooking(bookingId: number) {
-    const updatedBookings = bookings.filter(
-      (booking) => booking.id !== bookingId
-    );
-    setBookings(updatedBookings);
+    setBookings((bookingsState) => [...bookingsState, booking]);
   }
 
   function updateBooking(bookingId: number, updatedBooking: BookingProps) {
-    const updatedBookings = bookings.map((booking) =>
-      booking.id === bookingId ? updatedBooking : booking
+    setBookings((bookingsState) =>
+      bookingsState.map((booking) =>
+        booking.id === bookingId ? updatedBooking : booking
+      )
     );
-    setBookings(updatedBookings);
+  }
+
+  function removeBooking(
+    bookingId: number,
+    checkInDate: string,
+    checkOutDate: string
+  ) {
+    const bookingListId = bookings.findIndex(
+      (booking) =>
+        booking.id === bookingId &&
+        booking.checkInDate === checkInDate &&
+        booking.checkOutDate === checkOutDate
+    );
+
+    if (bookingListId >= 0) {
+      const newBookingsList = bookings.filter((_, id) => id !== bookingListId);
+      setBookings(newBookingsList);
+    }
   }
 
   return (
@@ -67,6 +62,7 @@ export function App() {
         <CardsContainer />
       </Container>
       <Drawer />
+      <ToastContainer position="bottom-right" theme="dark" />
     </BookingsContext.Provider>
   );
 }

@@ -5,6 +5,6 @@ export interface BookingsContextType {
   setShowBookingsVisibility: (showBookings: boolean) => void;
   bookings: BookingProps[];
   addBooking: (booking: BookingProps) => void;
-  removeBooking: (bookingId: number) => void;
+  removeBooking: (bookingId: number, heckInDate: string, checkOutDate: string) => void;
   updateBooking: (bookingId: number, updatedBooking: BookingProps) => void;
 }

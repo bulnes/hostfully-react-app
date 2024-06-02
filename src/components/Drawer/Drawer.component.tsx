@@ -1,42 +1,16 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { BookingsContext } from "../../@contexts/BookingsContext";
-import { BookingProps } from "../../@types/BookingProps";
+import { BookingForm } from "../BookingForm/BookingForm.component";
 
 export function Drawer() {
-  const {
-    showBookings,
-    setShowBookingsVisibility,
-    bookings,
-    removeBooking,
-    updateBooking,
-  } = useContext(BookingsContext);
-
-  const checkinRef = useRef<HTMLInputElement>(null);
-  const checkoutRef = useRef<HTMLInputElement>(null);
-
-  function handleUpdateBooking(
-    bookingId: number,
-    checkInDate: string,
-    checkOutDate: string
-  ) {
-    if (!checkInDate || !checkOutDate) {
-      return;
-    }
-
-    const updatedBooking = {
-      ...bookings.find((booking) => booking.id === bookingId),
-      checkInDate,
-      checkOutDate,
-    } as BookingProps;
-
-    updateBooking(bookingId, updatedBooking);
-  }
+  const { showBookings, setShowBookingsVisibility, bookings } =
+    useContext(BookingsContext);
 
   return (
     <div className={`${showBookings ? "block" : "hidden"}`}>
       <div className="bg-gray-900/50 fixed inset-0 z-30"></div>
 
-      <div className="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform bg-white w-80 lg:w-96 transform-none">
+      <div className="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform bg-white w-80 lg:w-96">
         <h5 className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
           <svg
             className="w-4 h-4 mr-2"
@@ -85,65 +59,13 @@ export function Drawer() {
                     </span>
                   </div>
 
-                  <p className="text-gray-500 dark:text-gray-400">
-                    {/* Format the date */}
-                    {new Date(booking.checkInDate).toLocaleDateString()} -{" "}
-                    {new Date(booking.checkOutDate).toLocaleDateString()}
-                  </p>
+                  {booking.checkInDate && booking.checkOutDate && (
+                    <p className="text-gray-500 dark:text-gray-400">
+                      {booking.checkInDate} - {booking.checkOutDate}
+                    </p>
+                  )}
 
-                  <div className="flex items-center gap-3 mt-3">
-                    <div className="flex items-start flex-col gap-1">
-                      <label htmlFor="checkinUpdate" className="text-gray-600">
-                        Check-in
-                      </label>
-
-                      <input
-                        type="date"
-                        id="checkinUpdate"
-                        className="border rounded-md p-1"
-                        ref={checkinRef}
-                        defaultValue={booking.checkInDate}
-                      />
-                    </div>
-
-                    <div className="flex items-start flex-col gap-1">
-                      <label htmlFor="checkoutUpdate" className="text-gray-600">
-                        Check-out
-                      </label>
-
-                      <input
-                        type="date"
-                        id="checkoutUpdate"
-                        className="border rounded-md p-1 w-full"
-                        ref={checkoutRef}
-                        defaultValue={booking.checkOutDate}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-3 mt-4">
-                    <button
-                      type="button"
-                      className="text-blue-700 dark:text-blue-400"
-                      onClick={() =>
-                        handleUpdateBooking(
-                          booking.id,
-                          checkinRef.current?.value || "",
-                          checkoutRef.current?.value || ""
-                        )
-                      }
-                    >
-                      Update
-                    </button>
-
-                    <button
-                      type="button"
-                      className="text-red-700 dark:text-red-400"
-                      onClick={() => removeBooking(booking.id)}
-                    >
-                      Delete
-                    </button>
-                  </div>
+                  <BookingForm formType="update" {...booking} />
                 </li>
               ))}
             </ul>
