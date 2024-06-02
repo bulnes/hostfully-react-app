@@ -18,8 +18,6 @@ export function isValidInfo({
   oldCheckInDate,
   oldCheckOutDate
 }: ValidInfoCheckProps) {
-  console.log({ checkin, checkout, bookings, id, oldCheckInDate, oldCheckOutDate })
-
   const swalErrorConfig = {
     icon: "error",
     timer: 3000,
@@ -42,8 +40,6 @@ export function isValidInfo({
 
   const bookingDate = new Date(checkinYear, checkinMonth, checkinDay);
   const bookingCheckOutDate = new Date(checkoutYear, checkoutMonth, checkoutDay);
-
-  console.log(bookingDate, bookingCheckOutDate, checkin, checkout)
 
   if (bookingDate > bookingCheckOutDate) {
     swal("Invalid date range", "Please select another date", swalErrorConfig);
