@@ -146,8 +146,8 @@ export function BookingForm({
             onClick={() =>
               handleUpdateBooking(
                 id,
-                checkInDate,
-                checkOutDate,
+                checkInDate || "",
+                checkOutDate || "",
                 checkinRef.current?.value || "",
                 checkoutRef.current?.value || ""
               )

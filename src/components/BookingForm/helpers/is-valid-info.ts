@@ -18,14 +18,7 @@ export function isValidInfo({
   oldCheckInDate,
   oldCheckOutDate
 }: ValidInfoCheckProps) {
-  console.log({
-    checkin,
-    checkout,
-    bookings,
-    id,
-    oldCheckInDate,
-    oldCheckOutDate
-  })
+  console.log({ checkin, checkout, bookings, id, oldCheckInDate, oldCheckOutDate })
 
   const swalErrorConfig = {
     icon: "error",
@@ -44,8 +37,13 @@ export function isValidInfo({
   }
 
   // Check if the check-in date is before the check-out date
-  const bookingDate = new Date(checkin);
-  const bookingCheckOutDate = new Date(checkout);
+  const [checkinYear, checkinMonth, checkinDay] = checkin.split("-").map(Number);
+  const [checkoutYear, checkoutMonth, checkoutDay] = checkout.split("-").map(Number);
+
+  const bookingDate = new Date(checkinYear, checkinMonth, checkinDay);
+  const bookingCheckOutDate = new Date(checkoutYear, checkoutMonth, checkoutDay);
+
+  console.log(bookingDate, bookingCheckOutDate, checkin, checkout)
 
   if (bookingDate > bookingCheckOutDate) {
     swal("Invalid date range", "Please select another date", swalErrorConfig);
@@ -70,12 +68,12 @@ export function isValidInfo({
   const overlappingBooking = id >= 0 ? bookings.find(
     (b, index) =>
       bookingIndex !== index &&
-      new Date(b.checkInDate || "") < bookingCheckOutDate &&
-      new Date(b.checkOutDate || "") > bookingDate
+      new Date(b.checkInDate || "") < new Date(checkout) &&
+      new Date(b.checkOutDate || "") > new Date(checkout)
   ) : bookings.find(
     (b) =>
-      new Date(b.checkInDate || "") < bookingCheckOutDate &&
-      new Date(b.checkOutDate || "") > bookingDate
+      new Date(b.checkInDate || "") <= new Date(checkout) &&
+      new Date(b.checkOutDate || "") >= new Date(checkout)
   );
 
   if (overlappingBooking) {
