@@ -1,30 +1,65 @@
-# React + TypeScript + Vite
+# Hostfully React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Front-end Test
 
-Currently, two official plugins are available:
+This is a simple React app that displays a list of properties. The app is built using React, Context API, and React Hooks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was required as part of the interview process for a front-end developer position at Hostfully.
 
-## Expanding the ESLint configuration
+You can view the live demo [here](https://hostfully-react-app.vercel.app/).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+If you want to run the project locally, follow the instructions below.
 
-- Configure the top-level `parserOptions` property like this:
+## Instructions
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone the repository
+
+```bash
+git clone git@github.com:bulnes/hostfully-react-app.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install the dependencies
+
+```bash
+cd hostfully-react-app
+npm install
+```
+
+3. Run the project
+
+```bash
+npm start
+```
+
+The project will be running at [http://localhost:5173](http://localhost:5173).
+
+4. Run the tests (optional)
+
+```bash
+npm test
+```
+
+## Features
+
+- Display a list of properties
+- Sort properties by price
+- Sort properties by lowest price
+- Sort properties by highest price
+- Book a property
+- Update a booking
+- Cancel a booking
+- Display a list of bookings
+
+## Technologies
+
+- React
+- Context API
+- React Hooks
+- Jest
+- React Testing Library
+- Tailwind CSS
+- Vercel
+
+## Author
+
+- [Bruno Bulnes](https://github.com/bulnes)
